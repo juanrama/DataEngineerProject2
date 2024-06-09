@@ -1,0 +1,34 @@
+[0m13:10:58.116629 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000284682B1C40>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002846AD21EB0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002846AD219D0>]}
+
+
+============================== 13:10:58.120626 | 8cfc66c5-b6c1-42eb-9d4e-bb2b8d87fc4a ==============================
+[0m13:10:58.120626 [info ] [MainThread]: Running with dbt=1.8.2
+[0m13:10:58.120626 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'profiles_dir': 'E:\\Projek\\dbt\\dbt_project\\mini_project_2', 'log_path': 'logs', 'fail_fast': 'False', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt deps', 'introspect': 'True', 'log_format': 'default', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m13:10:58.121619 [error] [MainThread]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path E:\Projek\dbt\dbt_project\mini_project_2\dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m13:10:58.124129 [debug] [MainThread]: Command `dbt deps` failed at 13:10:58.124129 after 0.06 seconds
+[0m13:10:58.124129 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000284682B1C40>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002846AD48B80>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002846AD48C10>]}
+[0m13:10:58.125129 [debug] [MainThread]: Flushing usage events
+[0m13:11:32.869967 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D373670C70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D3761064C0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D376106520>]}
+
+
+============================== 13:11:32.873951 | 1c35507e-a64c-46d6-b598-8d807e67c506 ==============================
+[0m13:11:32.873951 [info ] [MainThread]: Running with dbt=1.8.2
+[0m13:11:32.874952 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'profiles_dir': 'E:\\Projek\\dbt\\dbt_project\\mini_project_2', 'log_path': 'E:\\Projek\\dbt\\dbt_project\\mini_project_2\\logs', 'version_check': 'True', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'introspect': 'True', 'static_parser': 'True', 'invocation_command': 'dbt deps', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'send_anonymous_usage_stats': 'True'}
+[0m13:11:32.880950 [warn ] [MainThread]: [[33mWARNING[0m]: Deprecated functionality
+The `source-paths` config has been renamed to `model-paths`. Please update your
+`dbt_project.yml` configuration to reflect this change.
+[0m13:11:32.882945 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'deprecation', 'label': '1c35507e-a64c-46d6-b598-8d807e67c506', 'property_': 'warn', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D375C48910>]}
+[0m13:11:32.882945 [warn ] [MainThread]: [[33mWARNING[0m]: Deprecated functionality
+The `data-paths` config has been renamed to `seed-paths`. Please update your
+`dbt_project.yml` configuration to reflect this change.
+[0m13:11:32.884945 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'deprecation', 'label': '1c35507e-a64c-46d6-b598-8d807e67c506', 'property_': 'warn', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D375F12040>]}
+[0m13:11:33.001224 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '1c35507e-a64c-46d6-b598-8d807e67c506', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D3760CCBE0>]}
+[0m13:11:33.031001 [info ] [MainThread]: Warning: No packages were found in packages.yml
+[0m13:11:33.032995 [info ] [MainThread]: Warning: No packages were found in packages.yml
+[0m13:11:33.034004 [debug] [MainThread]: Command `dbt deps` succeeded at 13:11:33.034004 after 0.21 seconds
+[0m13:11:33.034004 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D373670C70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D375F8EFD0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D376244E20>]}
+[0m13:11:33.035003 [debug] [MainThread]: Flushing usage events
