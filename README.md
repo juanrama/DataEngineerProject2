@@ -1,7 +1,8 @@
 ## How to run it? 
 ### Create and Load Database
-```
+
 1. Create database
+```
 run insert_data.py
 ```
 
