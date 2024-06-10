@@ -1,13 +1,19 @@
 # learn_dbt
 
+STILL DEVELOP ON DOCKERFILE BECAUSE THERE IS SOME TROUBLE
 
 
-## How to run it?
 
-create a virtual env of python first :
+## How to run it? (temporary)
+### Load Data
 ```
-python3 -m venv <your directory>, exp : /Users/farhanpratama/venv_dskola
-source <your directory>, exp : /Users/farhanpratama/venv_dskola/bin/activate
+1. Make database
+make database namely db_project_2
+```
+2. run insert_data.py
+
+
+### Running DBT
 ```
 1. build the postgres image
 ```
