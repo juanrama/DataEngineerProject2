@@ -40521,3 +40521,923 @@ drop table if exists "db_project_2"."public"."datamart_monthly_supplier_gross_re
 [0m23:27:25.199129 [debug] [MainThread]: Command `dbt run` succeeded at 23:27:25.199129 after 2.24 seconds
 [0m23:27:25.199129 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F18782ECA0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F18ADB41F0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F18AE48FD0>]}
 [0m23:27:25.199129 [debug] [MainThread]: Flushing usage events
+[0m15:12:52.916773 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000264F5211C40>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000264F7CABD00>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000264F7CABC40>]}
+
+
+============================== 15:12:52.922507 | d5918b74-f4fe-4590-82b9-18893f850281 ==============================
+[0m15:12:52.922507 [info ] [MainThread]: Running with dbt=1.8.2
+[0m15:12:52.922507 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'profiles_dir': './', 'log_path': 'dbt_dskola_project\\logs', 'debug': 'False', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'log_format': 'default', 'invocation_command': 'dbt run --profiles-dir ./ --project-dir dbt_dskola_project', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m15:12:53.000826 [warn ] [MainThread]: [[33mWARNING[0m]: Deprecated functionality
+The `source-paths` config has been renamed to `model-paths`. Please update your
+`dbt_project.yml` configuration to reflect this change.
+[0m15:12:53.001827 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'deprecation', 'label': 'd5918b74-f4fe-4590-82b9-18893f850281', 'property_': 'warn', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000264F50E1160>]}
+[0m15:12:53.002829 [warn ] [MainThread]: [[33mWARNING[0m]: Deprecated functionality
+The `data-paths` config has been renamed to `seed-paths`. Please update your
+`dbt_project.yml` configuration to reflect this change.
+[0m15:12:53.003827 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'deprecation', 'label': 'd5918b74-f4fe-4590-82b9-18893f850281', 'property_': 'warn', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000264F50E1190>]}
+[0m15:12:53.178825 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'd5918b74-f4fe-4590-82b9-18893f850281', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000264F7C6D5E0>]}
+[0m15:12:53.229347 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'd5918b74-f4fe-4590-82b9-18893f850281', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000264F7C77040>]}
+[0m15:12:53.232372 [info ] [MainThread]: Registered adapter: postgres=1.8.1
+[0m15:12:53.255864 [debug] [MainThread]: checksum: f0a141b9de567cb7f131613ba2682f40b3a1c6a157f81c6e5435862eff68f109, vars: {}, profile: , target: , version: 1.8.2
+[0m15:12:54.235256 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m15:12:54.236281 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m15:12:54.241250 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 2 unused configuration paths:
+- seeds.dbt_dskola_project
+- snapshots.dbt_dskola_project
+[0m15:12:54.271429 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'd5918b74-f4fe-4590-82b9-18893f850281', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000264F822B130>]}
+[0m15:12:54.393461 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'd5918b74-f4fe-4590-82b9-18893f850281', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000264F71C2280>]}
+[0m15:12:54.393461 [info ] [MainThread]: Found 13 models, 7 sources, 413 macros
+[0m15:12:54.394460 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'd5918b74-f4fe-4590-82b9-18893f850281', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000264F8247D90>]}
+[0m15:12:54.395460 [info ] [MainThread]: 
+[0m15:12:54.396461 [debug] [MainThread]: Acquiring new postgres connection 'master'
+[0m15:12:54.401548 [debug] [ThreadPool]: Acquiring new postgres connection 'list_db_project_2'
+[0m15:12:56.096106 [debug] [ThreadPool]: Using postgres connection "list_db_project_2"
+[0m15:12:56.096106 [debug] [ThreadPool]: On list_db_project_2: /* {"app": "dbt", "dbt_version": "1.8.2", "profile_name": "dbt_dskola_project", "target_name": "dev", "connection_name": "list_db_project_2"} */
+
+    select distinct nspname from pg_namespace
+  
+[0m15:12:56.096106 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m15:12:56.148668 [debug] [ThreadPool]: SQL status: SELECT 4 in 0.0 seconds
+[0m15:12:56.150662 [debug] [ThreadPool]: On list_db_project_2: Close
+[0m15:12:56.152661 [debug] [ThreadPool]: Acquiring new postgres connection 'list_db_project_2_public'
+[0m15:12:56.157959 [debug] [ThreadPool]: Using postgres connection "list_db_project_2_public"
+[0m15:12:56.157959 [debug] [ThreadPool]: On list_db_project_2_public: BEGIN
+[0m15:12:56.158860 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m15:12:56.188521 [debug] [ThreadPool]: SQL status: BEGIN in 0.0 seconds
+[0m15:12:56.189538 [debug] [ThreadPool]: Using postgres connection "list_db_project_2_public"
+[0m15:12:56.189538 [debug] [ThreadPool]: On list_db_project_2_public: /* {"app": "dbt", "dbt_version": "1.8.2", "profile_name": "dbt_dskola_project", "target_name": "dev", "connection_name": "list_db_project_2_public"} */
+select
+      'db_project_2' as database,
+      tablename as name,
+      schemaname as schema,
+      'table' as type
+    from pg_tables
+    where schemaname ilike 'public'
+    union all
+    select
+      'db_project_2' as database,
+      viewname as name,
+      schemaname as schema,
+      'view' as type
+    from pg_views
+    where schemaname ilike 'public'
+    union all
+    select
+      'db_project_2' as database,
+      matviewname as name,
+      schemaname as schema,
+      'materialized_view' as type
+    from pg_matviews
+    where schemaname ilike 'public'
+  
+[0m15:12:56.194521 [debug] [ThreadPool]: SQL status: SELECT 10 in 0.0 seconds
+[0m15:12:56.195482 [debug] [ThreadPool]: On list_db_project_2_public: ROLLBACK
+[0m15:12:56.195482 [debug] [ThreadPool]: On list_db_project_2_public: Close
+[0m15:12:56.195482 [debug] [MainThread]: Using postgres connection "master"
+[0m15:12:56.195482 [debug] [MainThread]: On master: BEGIN
+[0m15:12:56.195482 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m15:12:56.226214 [debug] [MainThread]: SQL status: BEGIN in 0.0 seconds
+[0m15:12:56.226214 [debug] [MainThread]: Using postgres connection "master"
+[0m15:12:56.226214 [debug] [MainThread]: On master: /* {"app": "dbt", "dbt_version": "1.8.2", "profile_name": "dbt_dskola_project", "target_name": "dev", "connection_name": "master"} */
+with relation as (
+        select
+            pg_rewrite.ev_class as class,
+            pg_rewrite.oid as id
+        from pg_rewrite
+    ),
+    class as (
+        select
+            oid as id,
+            relname as name,
+            relnamespace as schema,
+            relkind as kind
+        from pg_class
+    ),
+    dependency as (
+        select distinct
+            pg_depend.objid as id,
+            pg_depend.refobjid as ref
+        from pg_depend
+    ),
+    schema as (
+        select
+            pg_namespace.oid as id,
+            pg_namespace.nspname as name
+        from pg_namespace
+        where nspname != 'information_schema' and nspname not like 'pg\_%'
+    ),
+    referenced as (
+        select
+            relation.id AS id,
+            referenced_class.name ,
+            referenced_class.schema ,
+            referenced_class.kind
+        from relation
+        join class as referenced_class on relation.class=referenced_class.id
+        where referenced_class.kind in ('r', 'v', 'm')
+    ),
+    relationships as (
+        select
+            referenced.name as referenced_name,
+            referenced.schema as referenced_schema_id,
+            dependent_class.name as dependent_name,
+            dependent_class.schema as dependent_schema_id,
+            referenced.kind as kind
+        from referenced
+        join dependency on referenced.id=dependency.id
+        join class as dependent_class on dependency.ref=dependent_class.id
+        where
+            (referenced.name != dependent_class.name or
+             referenced.schema != dependent_class.schema)
+    )
+
+    select
+        referenced_schema.name as referenced_schema,
+        relationships.referenced_name as referenced_name,
+        dependent_schema.name as dependent_schema,
+        relationships.dependent_name as dependent_name
+    from relationships
+    join schema as dependent_schema on relationships.dependent_schema_id=dependent_schema.id
+    join schema as referenced_schema on relationships.referenced_schema_id=referenced_schema.id
+    group by referenced_schema, referenced_name, dependent_schema, dependent_name
+    order by referenced_schema, referenced_name, dependent_schema, dependent_name;
+[0m15:12:56.226214 [debug] [MainThread]: SQL status: SELECT 0 in 0.0 seconds
+[0m15:12:56.241850 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'd5918b74-f4fe-4590-82b9-18893f850281', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000264F82E03D0>]}
+[0m15:12:56.241850 [debug] [MainThread]: On master: ROLLBACK
+[0m15:12:56.241850 [debug] [MainThread]: Using postgres connection "master"
+[0m15:12:56.241850 [debug] [MainThread]: On master: BEGIN
+[0m15:12:56.241850 [debug] [MainThread]: SQL status: BEGIN in 0.0 seconds
+[0m15:12:56.241850 [debug] [MainThread]: On master: COMMIT
+[0m15:12:56.241850 [debug] [MainThread]: Using postgres connection "master"
+[0m15:12:56.241850 [debug] [MainThread]: On master: COMMIT
+[0m15:12:56.241850 [debug] [MainThread]: SQL status: COMMIT in 0.0 seconds
+[0m15:12:56.241850 [debug] [MainThread]: On master: Close
+[0m15:12:56.241850 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m15:12:56.241850 [info ] [MainThread]: 
+[0m15:12:56.241850 [debug] [Thread-1  ]: Began running node model.dbt_dskola_project.stg_categories
+[0m15:12:56.241850 [info ] [Thread-1  ]: 1 of 13 START sql table model public.stg_categories ............................ [RUN]
+[0m15:12:56.241850 [debug] [Thread-1  ]: Acquiring new postgres connection 'model.dbt_dskola_project.stg_categories'
+[0m15:12:56.241850 [debug] [Thread-1  ]: Began compiling node model.dbt_dskola_project.stg_categories
+[0m15:12:56.258019 [debug] [Thread-1  ]: Writing injected SQL for node "model.dbt_dskola_project.stg_categories"
+[0m15:12:56.258019 [debug] [Thread-1  ]: Began executing node model.dbt_dskola_project.stg_categories
+[0m15:12:56.300151 [debug] [Thread-1  ]: Writing runtime sql for node "model.dbt_dskola_project.stg_categories"
+[0m15:12:56.301152 [debug] [Thread-1  ]: Using postgres connection "model.dbt_dskola_project.stg_categories"
+[0m15:12:56.301152 [debug] [Thread-1  ]: On model.dbt_dskola_project.stg_categories: BEGIN
+[0m15:12:56.302153 [debug] [Thread-1  ]: Opening a new connection, currently in state init
+[0m15:12:56.333622 [debug] [Thread-1  ]: SQL status: BEGIN in 0.0 seconds
+[0m15:12:56.333622 [debug] [Thread-1  ]: Using postgres connection "model.dbt_dskola_project.stg_categories"
+[0m15:12:56.334623 [debug] [Thread-1  ]: On model.dbt_dskola_project.stg_categories: /* {"app": "dbt", "dbt_version": "1.8.2", "profile_name": "dbt_dskola_project", "target_name": "dev", "node_id": "model.dbt_dskola_project.stg_categories"} */
+
+  
+    
+
+  create  table "db_project_2"."public"."stg_categories__dbt_tmp"
+  
+  
+    as
+  
+  (
+    with raw_categories as (
+    select
+        category_id,
+        category_name
+    from "db_project_2"."public"."categories"
+)
+select * from raw_categories
+  );
+  
+[0m15:12:56.340633 [debug] [Thread-1  ]: SQL status: SELECT 8 in 0.0 seconds
+[0m15:12:56.346625 [debug] [Thread-1  ]: Using postgres connection "model.dbt_dskola_project.stg_categories"
+[0m15:12:56.347626 [debug] [Thread-1  ]: On model.dbt_dskola_project.stg_categories: /* {"app": "dbt", "dbt_version": "1.8.2", "profile_name": "dbt_dskola_project", "target_name": "dev", "node_id": "model.dbt_dskola_project.stg_categories"} */
+alter table "db_project_2"."public"."stg_categories__dbt_tmp" rename to "stg_categories"
+[0m15:12:56.349158 [debug] [Thread-1  ]: SQL status: ALTER TABLE in 0.0 seconds
+[0m15:12:56.365076 [debug] [Thread-1  ]: On model.dbt_dskola_project.stg_categories: COMMIT
+[0m15:12:56.365076 [debug] [Thread-1  ]: Using postgres connection "model.dbt_dskola_project.stg_categories"
+[0m15:12:56.365076 [debug] [Thread-1  ]: On model.dbt_dskola_project.stg_categories: COMMIT
+[0m15:12:56.367058 [debug] [Thread-1  ]: SQL status: COMMIT in 0.0 seconds
+[0m15:12:56.373180 [debug] [Thread-1  ]: Applying DROP to: "db_project_2"."public"."stg_categories__dbt_backup"
+[0m15:12:56.376156 [debug] [Thread-1  ]: Using postgres connection "model.dbt_dskola_project.stg_categories"
+[0m15:12:56.377156 [debug] [Thread-1  ]: On model.dbt_dskola_project.stg_categories: /* {"app": "dbt", "dbt_version": "1.8.2", "profile_name": "dbt_dskola_project", "target_name": "dev", "node_id": "model.dbt_dskola_project.stg_categories"} */
+drop table if exists "db_project_2"."public"."stg_categories__dbt_backup" cascade
+[0m15:12:56.377979 [debug] [Thread-1  ]: SQL status: DROP TABLE in 0.0 seconds
+[0m15:12:56.379996 [debug] [Thread-1  ]: On model.dbt_dskola_project.stg_categories: Close
+[0m15:12:56.381992 [debug] [Thread-1  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'd5918b74-f4fe-4590-82b9-18893f850281', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000264F86CBE20>]}
+[0m15:12:56.382992 [info ] [Thread-1  ]: 1 of 13 OK created sql table model public.stg_categories ....................... [[32mSELECT 8[0m in 0.14s]
+[0m15:12:56.383992 [debug] [Thread-1  ]: Finished running node model.dbt_dskola_project.stg_categories
+[0m15:12:56.384991 [debug] [Thread-1  ]: Began running node model.dbt_dskola_project.stg_employees
+[0m15:12:56.385991 [info ] [Thread-1  ]: 2 of 13 START sql table model public.stg_employees ............................. [RUN]
+[0m15:12:56.385991 [debug] [Thread-1  ]: Re-using an available connection from the pool (formerly model.dbt_dskola_project.stg_categories, now model.dbt_dskola_project.stg_employees)
+[0m15:12:56.386991 [debug] [Thread-1  ]: Began compiling node model.dbt_dskola_project.stg_employees
+[0m15:12:56.389991 [debug] [Thread-1  ]: Writing injected SQL for node "model.dbt_dskola_project.stg_employees"
+[0m15:12:56.390992 [debug] [Thread-1  ]: Began executing node model.dbt_dskola_project.stg_employees
+[0m15:12:56.395985 [debug] [Thread-1  ]: Writing runtime sql for node "model.dbt_dskola_project.stg_employees"
+[0m15:12:56.396994 [debug] [Thread-1  ]: Using postgres connection "model.dbt_dskola_project.stg_employees"
+[0m15:12:56.396994 [debug] [Thread-1  ]: On model.dbt_dskola_project.stg_employees: BEGIN
+[0m15:12:56.397992 [debug] [Thread-1  ]: Opening a new connection, currently in state closed
+[0m15:12:56.434483 [debug] [Thread-1  ]: SQL status: BEGIN in 0.0 seconds
+[0m15:12:56.435484 [debug] [Thread-1  ]: Using postgres connection "model.dbt_dskola_project.stg_employees"
+[0m15:12:56.435484 [debug] [Thread-1  ]: On model.dbt_dskola_project.stg_employees: /* {"app": "dbt", "dbt_version": "1.8.2", "profile_name": "dbt_dskola_project", "target_name": "dev", "node_id": "model.dbt_dskola_project.stg_employees"} */
+
+  
+    
+
+  create  table "db_project_2"."public"."stg_employees__dbt_tmp"
+  
+  
+    as
+  
+  (
+    with raw_employees as (
+    select
+        employee_id,
+        first_name,
+        last_name,
+        (first_name || ' ' || last_name) as employee_name
+    from "db_project_2"."public"."employees"
+)
+select * from raw_employees
+  );
+  
+[0m15:12:56.443483 [debug] [Thread-1  ]: SQL status: SELECT 9 in 0.0 seconds
+[0m15:12:56.447506 [debug] [Thread-1  ]: Using postgres connection "model.dbt_dskola_project.stg_employees"
+[0m15:12:56.448485 [debug] [Thread-1  ]: On model.dbt_dskola_project.stg_employees: /* {"app": "dbt", "dbt_version": "1.8.2", "profile_name": "dbt_dskola_project", "target_name": "dev", "node_id": "model.dbt_dskola_project.stg_employees"} */
+alter table "db_project_2"."public"."stg_employees__dbt_tmp" rename to "stg_employees"
+[0m15:12:56.449486 [debug] [Thread-1  ]: SQL status: ALTER TABLE in 0.0 seconds
+[0m15:12:56.451495 [debug] [Thread-1  ]: On model.dbt_dskola_project.stg_employees: COMMIT
+[0m15:12:56.451495 [debug] [Thread-1  ]: Using postgres connection "model.dbt_dskola_project.stg_employees"
+[0m15:12:56.452483 [debug] [Thread-1  ]: On model.dbt_dskola_project.stg_employees: COMMIT
+[0m15:12:56.453490 [debug] [Thread-1  ]: SQL status: COMMIT in 0.0 seconds
+[0m15:12:56.457075 [debug] [Thread-1  ]: Applying DROP to: "db_project_2"."public"."stg_employees__dbt_backup"
+[0m15:12:56.458048 [debug] [Thread-1  ]: Using postgres connection "model.dbt_dskola_project.stg_employees"
+[0m15:12:56.458048 [debug] [Thread-1  ]: On model.dbt_dskola_project.stg_employees: /* {"app": "dbt", "dbt_version": "1.8.2", "profile_name": "dbt_dskola_project", "target_name": "dev", "node_id": "model.dbt_dskola_project.stg_employees"} */
+drop table if exists "db_project_2"."public"."stg_employees__dbt_backup" cascade
+[0m15:12:56.459048 [debug] [Thread-1  ]: SQL status: DROP TABLE in 0.0 seconds
+[0m15:12:56.460050 [debug] [Thread-1  ]: On model.dbt_dskola_project.stg_employees: Close
+[0m15:12:56.460050 [debug] [Thread-1  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'd5918b74-f4fe-4590-82b9-18893f850281', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000264F86CBBE0>]}
+[0m15:12:56.461165 [info ] [Thread-1  ]: 2 of 13 OK created sql table model public.stg_employees ........................ [[32mSELECT 9[0m in 0.07s]
+[0m15:12:56.462050 [debug] [Thread-1  ]: Finished running node model.dbt_dskola_project.stg_employees
+[0m15:12:56.463049 [debug] [Thread-1  ]: Began running node model.dbt_dskola_project.stg_order_details
+[0m15:12:56.463049 [info ] [Thread-1  ]: 3 of 13 START sql table model public.stg_order_details ......................... [RUN]
+[0m15:12:56.464074 [debug] [Thread-1  ]: Re-using an available connection from the pool (formerly model.dbt_dskola_project.stg_employees, now model.dbt_dskola_project.stg_order_details)
+[0m15:12:56.465044 [debug] [Thread-1  ]: Began compiling node model.dbt_dskola_project.stg_order_details
+[0m15:12:56.467067 [debug] [Thread-1  ]: Writing injected SQL for node "model.dbt_dskola_project.stg_order_details"
+[0m15:12:56.468049 [debug] [Thread-1  ]: Began executing node model.dbt_dskola_project.stg_order_details
+[0m15:12:56.471559 [debug] [Thread-1  ]: Writing runtime sql for node "model.dbt_dskola_project.stg_order_details"
+[0m15:12:56.472572 [debug] [Thread-1  ]: Using postgres connection "model.dbt_dskola_project.stg_order_details"
+[0m15:12:56.473571 [debug] [Thread-1  ]: On model.dbt_dskola_project.stg_order_details: BEGIN
+[0m15:12:56.473571 [debug] [Thread-1  ]: Opening a new connection, currently in state closed
+[0m15:12:56.509334 [debug] [Thread-1  ]: SQL status: BEGIN in 0.0 seconds
+[0m15:12:56.510363 [debug] [Thread-1  ]: Using postgres connection "model.dbt_dskola_project.stg_order_details"
+[0m15:12:56.510363 [debug] [Thread-1  ]: On model.dbt_dskola_project.stg_order_details: /* {"app": "dbt", "dbt_version": "1.8.2", "profile_name": "dbt_dskola_project", "target_name": "dev", "node_id": "model.dbt_dskola_project.stg_order_details"} */
+
+  
+    
+
+  create  table "db_project_2"."public"."stg_order_details__dbt_tmp"
+  
+  
+    as
+  
+  (
+    -- models/staging/stg_order_details.sql
+with raw_order_details as (
+    select
+        order_id,
+        product_id,
+        unit_price,
+        quantity,
+        discount
+    from "db_project_2"."public"."order_details"
+)
+select * from raw_order_details
+  );
+  
+[0m15:12:56.515425 [debug] [Thread-1  ]: SQL status: SELECT 2155 in 0.0 seconds
+[0m15:12:56.518959 [debug] [Thread-1  ]: Using postgres connection "model.dbt_dskola_project.stg_order_details"
+[0m15:12:56.518959 [debug] [Thread-1  ]: On model.dbt_dskola_project.stg_order_details: /* {"app": "dbt", "dbt_version": "1.8.2", "profile_name": "dbt_dskola_project", "target_name": "dev", "node_id": "model.dbt_dskola_project.stg_order_details"} */
+alter table "db_project_2"."public"."stg_order_details__dbt_tmp" rename to "stg_order_details"
+[0m15:12:56.519968 [debug] [Thread-1  ]: SQL status: ALTER TABLE in 0.0 seconds
+[0m15:12:56.520969 [debug] [Thread-1  ]: On model.dbt_dskola_project.stg_order_details: COMMIT
+[0m15:12:56.521777 [debug] [Thread-1  ]: Using postgres connection "model.dbt_dskola_project.stg_order_details"
+[0m15:12:56.521777 [debug] [Thread-1  ]: On model.dbt_dskola_project.stg_order_details: COMMIT
+[0m15:12:56.522788 [debug] [Thread-1  ]: SQL status: COMMIT in 0.0 seconds
+[0m15:12:56.525817 [debug] [Thread-1  ]: Applying DROP to: "db_project_2"."public"."stg_order_details__dbt_backup"
+[0m15:12:56.525817 [debug] [Thread-1  ]: Using postgres connection "model.dbt_dskola_project.stg_order_details"
+[0m15:12:56.526821 [debug] [Thread-1  ]: On model.dbt_dskola_project.stg_order_details: /* {"app": "dbt", "dbt_version": "1.8.2", "profile_name": "dbt_dskola_project", "target_name": "dev", "node_id": "model.dbt_dskola_project.stg_order_details"} */
+drop table if exists "db_project_2"."public"."stg_order_details__dbt_backup" cascade
+[0m15:12:56.526821 [debug] [Thread-1  ]: SQL status: DROP TABLE in 0.0 seconds
+[0m15:12:56.527809 [debug] [Thread-1  ]: On model.dbt_dskola_project.stg_order_details: Close
+[0m15:12:56.528795 [debug] [Thread-1  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'd5918b74-f4fe-4590-82b9-18893f850281', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000264F87F4FD0>]}
+[0m15:12:56.529787 [info ] [Thread-1  ]: 3 of 13 OK created sql table model public.stg_order_details .................... [[32mSELECT 2155[0m in 0.06s]
+[0m15:12:56.530780 [debug] [Thread-1  ]: Finished running node model.dbt_dskola_project.stg_order_details
+[0m15:12:56.530780 [debug] [Thread-1  ]: Began running node model.dbt_dskola_project.stg_orders
+[0m15:12:56.530780 [info ] [Thread-1  ]: 4 of 13 START sql table model public.stg_orders ................................ [RUN]
+[0m15:12:56.531806 [debug] [Thread-1  ]: Re-using an available connection from the pool (formerly model.dbt_dskola_project.stg_order_details, now model.dbt_dskola_project.stg_orders)
+[0m15:12:56.532797 [debug] [Thread-1  ]: Began compiling node model.dbt_dskola_project.stg_orders
+[0m15:12:56.535788 [debug] [Thread-1  ]: Writing injected SQL for node "model.dbt_dskola_project.stg_orders"
+[0m15:12:56.536780 [debug] [Thread-1  ]: Began executing node model.dbt_dskola_project.stg_orders
+[0m15:12:56.591941 [debug] [Thread-1  ]: Writing runtime sql for node "model.dbt_dskola_project.stg_orders"
+[0m15:12:56.591941 [debug] [Thread-1  ]: Using postgres connection "model.dbt_dskola_project.stg_orders"
+[0m15:12:56.591941 [debug] [Thread-1  ]: On model.dbt_dskola_project.stg_orders: BEGIN
+[0m15:12:56.591941 [debug] [Thread-1  ]: Opening a new connection, currently in state closed
+[0m15:12:56.627166 [debug] [Thread-1  ]: SQL status: BEGIN in 0.0 seconds
+[0m15:12:56.628172 [debug] [Thread-1  ]: Using postgres connection "model.dbt_dskola_project.stg_orders"
+[0m15:12:56.628172 [debug] [Thread-1  ]: On model.dbt_dskola_project.stg_orders: /* {"app": "dbt", "dbt_version": "1.8.2", "profile_name": "dbt_dskola_project", "target_name": "dev", "node_id": "model.dbt_dskola_project.stg_orders"} */
+
+  
+    
+
+  create  table "db_project_2"."public"."stg_orders__dbt_tmp"
+  
+  
+    as
+  
+  (
+    with raw_orders as (
+    select
+        order_id,
+        customer_id,
+        employee_id,
+        order_date,
+        freight
+    from "db_project_2"."public"."orders"
+)
+select * from raw_orders
+  );
+  
+[0m15:12:56.632998 [debug] [Thread-1  ]: SQL status: SELECT 830 in 0.0 seconds
+[0m15:12:56.632998 [debug] [Thread-1  ]: Using postgres connection "model.dbt_dskola_project.stg_orders"
+[0m15:12:56.632998 [debug] [Thread-1  ]: On model.dbt_dskola_project.stg_orders: /* {"app": "dbt", "dbt_version": "1.8.2", "profile_name": "dbt_dskola_project", "target_name": "dev", "node_id": "model.dbt_dskola_project.stg_orders"} */
+alter table "db_project_2"."public"."stg_orders__dbt_tmp" rename to "stg_orders"
+[0m15:12:56.640035 [debug] [Thread-1  ]: SQL status: ALTER TABLE in 0.0 seconds
+[0m15:12:56.641066 [debug] [Thread-1  ]: On model.dbt_dskola_project.stg_orders: COMMIT
+[0m15:12:56.642065 [debug] [Thread-1  ]: Using postgres connection "model.dbt_dskola_project.stg_orders"
+[0m15:12:56.642065 [debug] [Thread-1  ]: On model.dbt_dskola_project.stg_orders: COMMIT
+[0m15:12:56.643530 [debug] [Thread-1  ]: SQL status: COMMIT in 0.0 seconds
+[0m15:12:56.645543 [debug] [Thread-1  ]: Applying DROP to: "db_project_2"."public"."stg_orders__dbt_backup"
+[0m15:12:56.646542 [debug] [Thread-1  ]: Using postgres connection "model.dbt_dskola_project.stg_orders"
+[0m15:12:56.646542 [debug] [Thread-1  ]: On model.dbt_dskola_project.stg_orders: /* {"app": "dbt", "dbt_version": "1.8.2", "profile_name": "dbt_dskola_project", "target_name": "dev", "node_id": "model.dbt_dskola_project.stg_orders"} */
+drop table if exists "db_project_2"."public"."stg_orders__dbt_backup" cascade
+[0m15:12:56.647536 [debug] [Thread-1  ]: SQL status: DROP TABLE in 0.0 seconds
+[0m15:12:56.648565 [debug] [Thread-1  ]: On model.dbt_dskola_project.stg_orders: Close
+[0m15:12:56.648565 [debug] [Thread-1  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'd5918b74-f4fe-4590-82b9-18893f850281', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000264F8809820>]}
+[0m15:12:56.649536 [info ] [Thread-1  ]: 4 of 13 OK created sql table model public.stg_orders ........................... [[32mSELECT 830[0m in 0.12s]
+[0m15:12:56.650536 [debug] [Thread-1  ]: Finished running node model.dbt_dskola_project.stg_orders
+[0m15:12:56.650536 [debug] [Thread-1  ]: Began running node model.dbt_dskola_project.stg_products
+[0m15:12:56.651536 [info ] [Thread-1  ]: 5 of 13 START sql table model public.stg_products .............................. [RUN]
+[0m15:12:56.652536 [debug] [Thread-1  ]: Re-using an available connection from the pool (formerly model.dbt_dskola_project.stg_orders, now model.dbt_dskola_project.stg_products)
+[0m15:12:56.652536 [debug] [Thread-1  ]: Began compiling node model.dbt_dskola_project.stg_products
+[0m15:12:56.655047 [debug] [Thread-1  ]: Writing injected SQL for node "model.dbt_dskola_project.stg_products"
+[0m15:12:56.656053 [debug] [Thread-1  ]: Began executing node model.dbt_dskola_project.stg_products
+[0m15:12:56.660086 [debug] [Thread-1  ]: Writing runtime sql for node "model.dbt_dskola_project.stg_products"
+[0m15:12:56.661053 [debug] [Thread-1  ]: Using postgres connection "model.dbt_dskola_project.stg_products"
+[0m15:12:56.661053 [debug] [Thread-1  ]: On model.dbt_dskola_project.stg_products: BEGIN
+[0m15:12:56.661053 [debug] [Thread-1  ]: Opening a new connection, currently in state closed
+[0m15:12:56.695562 [debug] [Thread-1  ]: SQL status: BEGIN in 0.0 seconds
+[0m15:12:56.696589 [debug] [Thread-1  ]: Using postgres connection "model.dbt_dskola_project.stg_products"
+[0m15:12:56.696589 [debug] [Thread-1  ]: On model.dbt_dskola_project.stg_products: /* {"app": "dbt", "dbt_version": "1.8.2", "profile_name": "dbt_dskola_project", "target_name": "dev", "node_id": "model.dbt_dskola_project.stg_products"} */
+
+  
+    
+
+  create  table "db_project_2"."public"."stg_products__dbt_tmp"
+  
+  
+    as
+  
+  (
+    -- models/staging/stg_products.sql
+with raw_products as (
+    select
+        product_id,
+        product_name,
+        supplier_id,
+        category_id,
+        unit_price,
+        units_in_stock
+    from "db_project_2"."public"."products"
+)
+select * from raw_products
+  );
+  
+[0m15:12:56.702425 [debug] [Thread-1  ]: SQL status: SELECT 77 in 0.0 seconds
+[0m15:12:56.702425 [debug] [Thread-1  ]: Using postgres connection "model.dbt_dskola_project.stg_products"
+[0m15:12:56.702425 [debug] [Thread-1  ]: On model.dbt_dskola_project.stg_products: /* {"app": "dbt", "dbt_version": "1.8.2", "profile_name": "dbt_dskola_project", "target_name": "dev", "node_id": "model.dbt_dskola_project.stg_products"} */
+alter table "db_project_2"."public"."stg_products__dbt_tmp" rename to "stg_products"
+[0m15:12:56.702425 [debug] [Thread-1  ]: SQL status: ALTER TABLE in 0.0 seconds
+[0m15:12:56.702425 [debug] [Thread-1  ]: On model.dbt_dskola_project.stg_products: COMMIT
+[0m15:12:56.702425 [debug] [Thread-1  ]: Using postgres connection "model.dbt_dskola_project.stg_products"
+[0m15:12:56.702425 [debug] [Thread-1  ]: On model.dbt_dskola_project.stg_products: COMMIT
+[0m15:12:56.702425 [debug] [Thread-1  ]: SQL status: COMMIT in 0.0 seconds
+[0m15:12:56.702425 [debug] [Thread-1  ]: Applying DROP to: "db_project_2"."public"."stg_products__dbt_backup"
+[0m15:12:56.702425 [debug] [Thread-1  ]: Using postgres connection "model.dbt_dskola_project.stg_products"
+[0m15:12:56.702425 [debug] [Thread-1  ]: On model.dbt_dskola_project.stg_products: /* {"app": "dbt", "dbt_version": "1.8.2", "profile_name": "dbt_dskola_project", "target_name": "dev", "node_id": "model.dbt_dskola_project.stg_products"} */
+drop table if exists "db_project_2"."public"."stg_products__dbt_backup" cascade
+[0m15:12:56.702425 [debug] [Thread-1  ]: SQL status: DROP TABLE in 0.0 seconds
+[0m15:12:56.702425 [debug] [Thread-1  ]: On model.dbt_dskola_project.stg_products: Close
+[0m15:12:56.702425 [debug] [Thread-1  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'd5918b74-f4fe-4590-82b9-18893f850281', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000264F8793DC0>]}
+[0m15:12:56.702425 [info ] [Thread-1  ]: 5 of 13 OK created sql table model public.stg_products ......................... [[32mSELECT 77[0m in 0.05s]
+[0m15:12:56.702425 [debug] [Thread-1  ]: Finished running node model.dbt_dskola_project.stg_products
+[0m15:12:56.702425 [debug] [Thread-1  ]: Began running node model.dbt_dskola_project.stg_shippers
+[0m15:12:56.718024 [info ] [Thread-1  ]: 6 of 13 START sql table model public.stg_shippers .............................. [RUN]
+[0m15:12:56.718881 [debug] [Thread-1  ]: Re-using an available connection from the pool (formerly model.dbt_dskola_project.stg_products, now model.dbt_dskola_project.stg_shippers)
+[0m15:12:56.718881 [debug] [Thread-1  ]: Began compiling node model.dbt_dskola_project.stg_shippers
+[0m15:12:56.722866 [debug] [Thread-1  ]: Writing injected SQL for node "model.dbt_dskola_project.stg_shippers"
+[0m15:12:56.723862 [debug] [Thread-1  ]: Began executing node model.dbt_dskola_project.stg_shippers
+[0m15:12:56.728373 [debug] [Thread-1  ]: Writing runtime sql for node "model.dbt_dskola_project.stg_shippers"
+[0m15:12:56.730378 [debug] [Thread-1  ]: Using postgres connection "model.dbt_dskola_project.stg_shippers"
+[0m15:12:56.731382 [debug] [Thread-1  ]: On model.dbt_dskola_project.stg_shippers: BEGIN
+[0m15:12:56.731382 [debug] [Thread-1  ]: Opening a new connection, currently in state closed
+[0m15:12:56.769738 [debug] [Thread-1  ]: SQL status: BEGIN in 0.0 seconds
+[0m15:12:56.769738 [debug] [Thread-1  ]: Using postgres connection "model.dbt_dskola_project.stg_shippers"
+[0m15:12:56.770744 [debug] [Thread-1  ]: On model.dbt_dskola_project.stg_shippers: /* {"app": "dbt", "dbt_version": "1.8.2", "profile_name": "dbt_dskola_project", "target_name": "dev", "node_id": "model.dbt_dskola_project.stg_shippers"} */
+
+  
+    
+
+  create  table "db_project_2"."public"."stg_shippers__dbt_tmp"
+  
+  
+    as
+  
+  (
+    with raw_shippers as (
+    select
+        shipper_id,
+        company_name
+    from "db_project_2"."public"."shippers"
+)
+select * from raw_shippers
+  );
+  
+[0m15:12:56.776269 [debug] [Thread-1  ]: SQL status: SELECT 3 in 0.0 seconds
+[0m15:12:56.780291 [debug] [Thread-1  ]: Using postgres connection "model.dbt_dskola_project.stg_shippers"
+[0m15:12:56.780291 [debug] [Thread-1  ]: On model.dbt_dskola_project.stg_shippers: /* {"app": "dbt", "dbt_version": "1.8.2", "profile_name": "dbt_dskola_project", "target_name": "dev", "node_id": "model.dbt_dskola_project.stg_shippers"} */
+alter table "db_project_2"."public"."stg_shippers__dbt_tmp" rename to "stg_shippers"
+[0m15:12:56.781286 [debug] [Thread-1  ]: SQL status: ALTER TABLE in 0.0 seconds
+[0m15:12:56.782269 [debug] [Thread-1  ]: On model.dbt_dskola_project.stg_shippers: COMMIT
+[0m15:12:56.783286 [debug] [Thread-1  ]: Using postgres connection "model.dbt_dskola_project.stg_shippers"
+[0m15:12:56.783286 [debug] [Thread-1  ]: On model.dbt_dskola_project.stg_shippers: COMMIT
+[0m15:12:56.784271 [debug] [Thread-1  ]: SQL status: COMMIT in 0.0 seconds
+[0m15:12:56.786270 [debug] [Thread-1  ]: Applying DROP to: "db_project_2"."public"."stg_shippers__dbt_backup"
+[0m15:12:56.787269 [debug] [Thread-1  ]: Using postgres connection "model.dbt_dskola_project.stg_shippers"
+[0m15:12:56.788272 [debug] [Thread-1  ]: On model.dbt_dskola_project.stg_shippers: /* {"app": "dbt", "dbt_version": "1.8.2", "profile_name": "dbt_dskola_project", "target_name": "dev", "node_id": "model.dbt_dskola_project.stg_shippers"} */
+drop table if exists "db_project_2"."public"."stg_shippers__dbt_backup" cascade
+[0m15:12:56.788272 [debug] [Thread-1  ]: SQL status: DROP TABLE in 0.0 seconds
+[0m15:12:56.789289 [debug] [Thread-1  ]: On model.dbt_dskola_project.stg_shippers: Close
+[0m15:12:56.790276 [debug] [Thread-1  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'd5918b74-f4fe-4590-82b9-18893f850281', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000264F8805FD0>]}
+[0m15:12:56.790276 [info ] [Thread-1  ]: 6 of 13 OK created sql table model public.stg_shippers ......................... [[32mSELECT 3[0m in 0.07s]
+[0m15:12:56.791271 [debug] [Thread-1  ]: Finished running node model.dbt_dskola_project.stg_shippers
+[0m15:12:56.792270 [debug] [Thread-1  ]: Began running node model.dbt_dskola_project.stg_suppliers
+[0m15:12:56.792270 [info ] [Thread-1  ]: 7 of 13 START sql table model public.stg_suppliers ............................. [RUN]
+[0m15:12:56.793271 [debug] [Thread-1  ]: Re-using an available connection from the pool (formerly model.dbt_dskola_project.stg_shippers, now model.dbt_dskola_project.stg_suppliers)
+[0m15:12:56.794262 [debug] [Thread-1  ]: Began compiling node model.dbt_dskola_project.stg_suppliers
+[0m15:12:56.797269 [debug] [Thread-1  ]: Writing injected SQL for node "model.dbt_dskola_project.stg_suppliers"
+[0m15:12:56.798262 [debug] [Thread-1  ]: Began executing node model.dbt_dskola_project.stg_suppliers
+[0m15:12:56.802262 [debug] [Thread-1  ]: Writing runtime sql for node "model.dbt_dskola_project.stg_suppliers"
+[0m15:12:56.803264 [debug] [Thread-1  ]: Using postgres connection "model.dbt_dskola_project.stg_suppliers"
+[0m15:12:56.804269 [debug] [Thread-1  ]: On model.dbt_dskola_project.stg_suppliers: BEGIN
+[0m15:12:56.804269 [debug] [Thread-1  ]: Opening a new connection, currently in state closed
+[0m15:12:56.841325 [debug] [Thread-1  ]: SQL status: BEGIN in 0.0 seconds
+[0m15:12:56.841325 [debug] [Thread-1  ]: Using postgres connection "model.dbt_dskola_project.stg_suppliers"
+[0m15:12:56.842326 [debug] [Thread-1  ]: On model.dbt_dskola_project.stg_suppliers: /* {"app": "dbt", "dbt_version": "1.8.2", "profile_name": "dbt_dskola_project", "target_name": "dev", "node_id": "model.dbt_dskola_project.stg_suppliers"} */
+
+  
+    
+
+  create  table "db_project_2"."public"."stg_suppliers__dbt_tmp"
+  
+  
+    as
+  
+  (
+    with raw_suppliers as (
+    select
+        supplier_id,
+        company_name
+    from "db_project_2"."public"."suppliers"
+)
+select * from raw_suppliers
+  );
+  
+[0m15:12:56.849122 [debug] [Thread-1  ]: SQL status: SELECT 29 in 0.0 seconds
+[0m15:12:56.852152 [debug] [Thread-1  ]: Using postgres connection "model.dbt_dskola_project.stg_suppliers"
+[0m15:12:56.852152 [debug] [Thread-1  ]: On model.dbt_dskola_project.stg_suppliers: /* {"app": "dbt", "dbt_version": "1.8.2", "profile_name": "dbt_dskola_project", "target_name": "dev", "node_id": "model.dbt_dskola_project.stg_suppliers"} */
+alter table "db_project_2"."public"."stg_suppliers__dbt_tmp" rename to "stg_suppliers"
+[0m15:12:56.853143 [debug] [Thread-1  ]: SQL status: ALTER TABLE in 0.0 seconds
+[0m15:12:56.855648 [debug] [Thread-1  ]: On model.dbt_dskola_project.stg_suppliers: COMMIT
+[0m15:12:56.855648 [debug] [Thread-1  ]: Using postgres connection "model.dbt_dskola_project.stg_suppliers"
+[0m15:12:56.855648 [debug] [Thread-1  ]: On model.dbt_dskola_project.stg_suppliers: COMMIT
+[0m15:12:56.856781 [debug] [Thread-1  ]: SQL status: COMMIT in 0.0 seconds
+[0m15:12:56.860653 [debug] [Thread-1  ]: Applying DROP to: "db_project_2"."public"."stg_suppliers__dbt_backup"
+[0m15:12:56.860653 [debug] [Thread-1  ]: Using postgres connection "model.dbt_dskola_project.stg_suppliers"
+[0m15:12:56.861654 [debug] [Thread-1  ]: On model.dbt_dskola_project.stg_suppliers: /* {"app": "dbt", "dbt_version": "1.8.2", "profile_name": "dbt_dskola_project", "target_name": "dev", "node_id": "model.dbt_dskola_project.stg_suppliers"} */
+drop table if exists "db_project_2"."public"."stg_suppliers__dbt_backup" cascade
+[0m15:12:56.861654 [debug] [Thread-1  ]: SQL status: DROP TABLE in 0.0 seconds
+[0m15:12:56.863681 [debug] [Thread-1  ]: On model.dbt_dskola_project.stg_suppliers: Close
+[0m15:12:56.863681 [debug] [Thread-1  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'd5918b74-f4fe-4590-82b9-18893f850281', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000264F87F4130>]}
+[0m15:12:56.864656 [info ] [Thread-1  ]: 7 of 13 OK created sql table model public.stg_suppliers ........................ [[32mSELECT 29[0m in 0.07s]
+[0m15:12:56.865661 [debug] [Thread-1  ]: Finished running node model.dbt_dskola_project.stg_suppliers
+[0m15:12:56.865661 [debug] [Thread-1  ]: Began running node model.dbt_dskola_project.int_monthly_employee_revenue
+[0m15:12:56.865661 [info ] [Thread-1  ]: 8 of 13 START sql table model public.int_monthly_employee_revenue .............. [RUN]
+[0m15:12:56.867165 [debug] [Thread-1  ]: Re-using an available connection from the pool (formerly model.dbt_dskola_project.stg_suppliers, now model.dbt_dskola_project.int_monthly_employee_revenue)
+[0m15:12:56.867165 [debug] [Thread-1  ]: Began compiling node model.dbt_dskola_project.int_monthly_employee_revenue
+[0m15:12:56.871171 [debug] [Thread-1  ]: Writing injected SQL for node "model.dbt_dskola_project.int_monthly_employee_revenue"
+[0m15:12:56.871171 [debug] [Thread-1  ]: Began executing node model.dbt_dskola_project.int_monthly_employee_revenue
+[0m15:12:56.876170 [debug] [Thread-1  ]: Writing runtime sql for node "model.dbt_dskola_project.int_monthly_employee_revenue"
+[0m15:12:56.877171 [debug] [Thread-1  ]: Using postgres connection "model.dbt_dskola_project.int_monthly_employee_revenue"
+[0m15:12:56.877171 [debug] [Thread-1  ]: On model.dbt_dskola_project.int_monthly_employee_revenue: BEGIN
+[0m15:12:56.877171 [debug] [Thread-1  ]: Opening a new connection, currently in state closed
+[0m15:12:56.915873 [debug] [Thread-1  ]: SQL status: BEGIN in 0.0 seconds
+[0m15:12:56.916886 [debug] [Thread-1  ]: Using postgres connection "model.dbt_dskola_project.int_monthly_employee_revenue"
+[0m15:12:56.916886 [debug] [Thread-1  ]: On model.dbt_dskola_project.int_monthly_employee_revenue: /* {"app": "dbt", "dbt_version": "1.8.2", "profile_name": "dbt_dskola_project", "target_name": "dev", "node_id": "model.dbt_dskola_project.int_monthly_employee_revenue"} */
+
+  
+    
+
+  create  table "db_project_2"."public"."int_monthly_employee_revenue__dbt_tmp"
+  
+  
+    as
+  
+  (
+    -- models/intermediate/int_monthly_employee_revenue.sql
+with order_product as (
+    select
+        o.order_id,
+        o.order_date,
+        o.employee_id,
+        od.unit_price * od.quantity * (1 - od.discount) as gross_revenue
+    from "db_project_2"."public"."stg_orders" o
+    join "db_project_2"."public"."stg_order_details" od
+    on o.order_id = od.order_id
+)
+select
+    employee_id,
+    DATE_PART('month', order_date::date) AS month,
+    sum(gross_revenue) as total_gross_revenue
+from order_product
+group by employee_id, month
+order by month asc
+  );
+  
+[0m15:12:56.928546 [debug] [Thread-1  ]: SQL status: SELECT 108 in 0.0 seconds
+[0m15:12:56.931546 [debug] [Thread-1  ]: Using postgres connection "model.dbt_dskola_project.int_monthly_employee_revenue"
+[0m15:12:56.931546 [debug] [Thread-1  ]: On model.dbt_dskola_project.int_monthly_employee_revenue: /* {"app": "dbt", "dbt_version": "1.8.2", "profile_name": "dbt_dskola_project", "target_name": "dev", "node_id": "model.dbt_dskola_project.int_monthly_employee_revenue"} */
+alter table "db_project_2"."public"."int_monthly_employee_revenue__dbt_tmp" rename to "int_monthly_employee_revenue"
+[0m15:12:56.931546 [debug] [Thread-1  ]: SQL status: ALTER TABLE in 0.0 seconds
+[0m15:12:56.931546 [debug] [Thread-1  ]: On model.dbt_dskola_project.int_monthly_employee_revenue: COMMIT
+[0m15:12:56.931546 [debug] [Thread-1  ]: Using postgres connection "model.dbt_dskola_project.int_monthly_employee_revenue"
+[0m15:12:56.931546 [debug] [Thread-1  ]: On model.dbt_dskola_project.int_monthly_employee_revenue: COMMIT
+[0m15:12:56.931546 [debug] [Thread-1  ]: SQL status: COMMIT in 0.0 seconds
+[0m15:12:56.938567 [debug] [Thread-1  ]: Applying DROP to: "db_project_2"."public"."int_monthly_employee_revenue__dbt_backup"
+[0m15:12:56.938567 [debug] [Thread-1  ]: Using postgres connection "model.dbt_dskola_project.int_monthly_employee_revenue"
+[0m15:12:56.939590 [debug] [Thread-1  ]: On model.dbt_dskola_project.int_monthly_employee_revenue: /* {"app": "dbt", "dbt_version": "1.8.2", "profile_name": "dbt_dskola_project", "target_name": "dev", "node_id": "model.dbt_dskola_project.int_monthly_employee_revenue"} */
+drop table if exists "db_project_2"."public"."int_monthly_employee_revenue__dbt_backup" cascade
+[0m15:12:56.939590 [debug] [Thread-1  ]: SQL status: DROP TABLE in 0.0 seconds
+[0m15:12:56.941598 [debug] [Thread-1  ]: On model.dbt_dskola_project.int_monthly_employee_revenue: Close
+[0m15:12:56.941598 [debug] [Thread-1  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'd5918b74-f4fe-4590-82b9-18893f850281', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000264F82EAEB0>]}
+[0m15:12:56.942588 [info ] [Thread-1  ]: 8 of 13 OK created sql table model public.int_monthly_employee_revenue ......... [[32mSELECT 108[0m in 0.07s]
+[0m15:12:56.943596 [debug] [Thread-1  ]: Finished running node model.dbt_dskola_project.int_monthly_employee_revenue
+[0m15:12:56.943596 [debug] [Thread-1  ]: Began running node model.dbt_dskola_project.int_monthly_category_sales
+[0m15:12:56.944611 [info ] [Thread-1  ]: 9 of 13 START sql table model public.int_monthly_category_sales ................ [RUN]
+[0m15:12:56.945597 [debug] [Thread-1  ]: Re-using an available connection from the pool (formerly model.dbt_dskola_project.int_monthly_employee_revenue, now model.dbt_dskola_project.int_monthly_category_sales)
+[0m15:12:56.945597 [debug] [Thread-1  ]: Began compiling node model.dbt_dskola_project.int_monthly_category_sales
+[0m15:12:56.948618 [debug] [Thread-1  ]: Writing injected SQL for node "model.dbt_dskola_project.int_monthly_category_sales"
+[0m15:12:56.949594 [debug] [Thread-1  ]: Began executing node model.dbt_dskola_project.int_monthly_category_sales
+[0m15:12:56.953615 [debug] [Thread-1  ]: Writing runtime sql for node "model.dbt_dskola_project.int_monthly_category_sales"
+[0m15:12:56.954595 [debug] [Thread-1  ]: Using postgres connection "model.dbt_dskola_project.int_monthly_category_sales"
+[0m15:12:56.954595 [debug] [Thread-1  ]: On model.dbt_dskola_project.int_monthly_category_sales: BEGIN
+[0m15:12:56.954595 [debug] [Thread-1  ]: Opening a new connection, currently in state closed
+[0m15:12:56.991337 [debug] [Thread-1  ]: SQL status: BEGIN in 0.0 seconds
+[0m15:12:56.992318 [debug] [Thread-1  ]: Using postgres connection "model.dbt_dskola_project.int_monthly_category_sales"
+[0m15:12:56.992318 [debug] [Thread-1  ]: On model.dbt_dskola_project.int_monthly_category_sales: /* {"app": "dbt", "dbt_version": "1.8.2", "profile_name": "dbt_dskola_project", "target_name": "dev", "node_id": "model.dbt_dskola_project.int_monthly_category_sales"} */
+
+  
+    
+
+  create  table "db_project_2"."public"."int_monthly_category_sales__dbt_tmp"
+  
+  
+    as
+  
+  (
+    -- models/intermediate/int_monthly_category_sales.sql
+with order_product as (
+    select
+        o.order_id,
+        o.order_date,
+        od.product_id,
+        od.quantity
+    from "db_project_2"."public"."stg_orders" o
+    join "db_project_2"."public"."stg_order_details" od
+    on o.order_id = od.order_id
+),
+product_category as (
+    select
+        op.order_id,
+        op.order_date,
+        p.category_id,
+        op.quantity
+    from order_product op
+    join "db_project_2"."public"."stg_products" p
+    on op.product_id = p.product_id
+)
+select
+    category_id,
+    DATE_PART('month', order_date::date) AS month,
+    sum(quantity) as total_quantity
+from product_category
+group by category_id, month
+order by month asc
+  );
+  
+[0m15:12:57.001055 [debug] [Thread-1  ]: SQL status: SELECT 96 in 0.0 seconds
+[0m15:12:57.001055 [debug] [Thread-1  ]: Using postgres connection "model.dbt_dskola_project.int_monthly_category_sales"
+[0m15:12:57.001055 [debug] [Thread-1  ]: On model.dbt_dskola_project.int_monthly_category_sales: /* {"app": "dbt", "dbt_version": "1.8.2", "profile_name": "dbt_dskola_project", "target_name": "dev", "node_id": "model.dbt_dskola_project.int_monthly_category_sales"} */
+alter table "db_project_2"."public"."int_monthly_category_sales__dbt_tmp" rename to "int_monthly_category_sales"
+[0m15:12:57.001055 [debug] [Thread-1  ]: SQL status: ALTER TABLE in 0.0 seconds
+[0m15:12:57.001055 [debug] [Thread-1  ]: On model.dbt_dskola_project.int_monthly_category_sales: COMMIT
+[0m15:12:57.001055 [debug] [Thread-1  ]: Using postgres connection "model.dbt_dskola_project.int_monthly_category_sales"
+[0m15:12:57.001055 [debug] [Thread-1  ]: On model.dbt_dskola_project.int_monthly_category_sales: COMMIT
+[0m15:12:57.001055 [debug] [Thread-1  ]: SQL status: COMMIT in 0.0 seconds
+[0m15:12:57.001055 [debug] [Thread-1  ]: Applying DROP to: "db_project_2"."public"."int_monthly_category_sales__dbt_backup"
+[0m15:12:57.016318 [debug] [Thread-1  ]: Using postgres connection "model.dbt_dskola_project.int_monthly_category_sales"
+[0m15:12:57.016318 [debug] [Thread-1  ]: On model.dbt_dskola_project.int_monthly_category_sales: /* {"app": "dbt", "dbt_version": "1.8.2", "profile_name": "dbt_dskola_project", "target_name": "dev", "node_id": "model.dbt_dskola_project.int_monthly_category_sales"} */
+drop table if exists "db_project_2"."public"."int_monthly_category_sales__dbt_backup" cascade
+[0m15:12:57.016318 [debug] [Thread-1  ]: SQL status: DROP TABLE in 0.0 seconds
+[0m15:12:57.016318 [debug] [Thread-1  ]: On model.dbt_dskola_project.int_monthly_category_sales: Close
+[0m15:12:57.016318 [debug] [Thread-1  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'd5918b74-f4fe-4590-82b9-18893f850281', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000264F8807CA0>]}
+[0m15:12:57.016318 [info ] [Thread-1  ]: 9 of 13 OK created sql table model public.int_monthly_category_sales ........... [[32mSELECT 96[0m in 0.07s]
+[0m15:12:57.016318 [debug] [Thread-1  ]: Finished running node model.dbt_dskola_project.int_monthly_category_sales
+[0m15:12:57.016318 [debug] [Thread-1  ]: Began running node model.dbt_dskola_project.int_monthly_supplier_revenue
+[0m15:12:57.024556 [info ] [Thread-1  ]: 10 of 13 START sql table model public.int_monthly_supplier_revenue ............. [RUN]
+[0m15:12:57.025562 [debug] [Thread-1  ]: Re-using an available connection from the pool (formerly model.dbt_dskola_project.int_monthly_category_sales, now model.dbt_dskola_project.int_monthly_supplier_revenue)
+[0m15:12:57.025562 [debug] [Thread-1  ]: Began compiling node model.dbt_dskola_project.int_monthly_supplier_revenue
+[0m15:12:57.029664 [debug] [Thread-1  ]: Writing injected SQL for node "model.dbt_dskola_project.int_monthly_supplier_revenue"
+[0m15:12:57.030664 [debug] [Thread-1  ]: Began executing node model.dbt_dskola_project.int_monthly_supplier_revenue
+[0m15:12:57.034672 [debug] [Thread-1  ]: Writing runtime sql for node "model.dbt_dskola_project.int_monthly_supplier_revenue"
+[0m15:12:57.036687 [debug] [Thread-1  ]: Using postgres connection "model.dbt_dskola_project.int_monthly_supplier_revenue"
+[0m15:12:57.037675 [debug] [Thread-1  ]: On model.dbt_dskola_project.int_monthly_supplier_revenue: BEGIN
+[0m15:12:57.037675 [debug] [Thread-1  ]: Opening a new connection, currently in state closed
+[0m15:12:57.070994 [debug] [Thread-1  ]: SQL status: BEGIN in 0.0 seconds
+[0m15:12:57.073530 [debug] [Thread-1  ]: Using postgres connection "model.dbt_dskola_project.int_monthly_supplier_revenue"
+[0m15:12:57.073530 [debug] [Thread-1  ]: On model.dbt_dskola_project.int_monthly_supplier_revenue: /* {"app": "dbt", "dbt_version": "1.8.2", "profile_name": "dbt_dskola_project", "target_name": "dev", "node_id": "model.dbt_dskola_project.int_monthly_supplier_revenue"} */
+
+  
+    
+
+  create  table "db_project_2"."public"."int_monthly_supplier_revenue__dbt_tmp"
+  
+  
+    as
+  
+  (
+    -- models/intermediate/int_monthly_supplier_revenue.sql
+with order_product as (
+    select
+        o.order_id,
+        o.order_date,
+        od.product_id,
+        od.unit_price * od.quantity * (1 - od.discount) as gross_revenue
+    from "db_project_2"."public"."stg_orders" o
+    join "db_project_2"."public"."stg_order_details" od
+    on o.order_id = od.order_id
+),
+product_supplier as (
+    select
+        op.order_id,
+        op.order_date,
+        p.supplier_id,
+        op.gross_revenue
+    from order_product op
+    join "db_project_2"."public"."stg_products" p
+    on op.product_id = p.product_id
+)
+select
+    supplier_id,
+    DATE_PART('month', order_date::date) AS month,
+    sum(gross_revenue) as total_gross_revenue
+from product_supplier
+group by supplier_id, month
+order by month asc
+  );
+  
+[0m15:12:57.073530 [debug] [Thread-1  ]: SQL status: SELECT 338 in 0.0 seconds
+[0m15:12:57.087070 [debug] [Thread-1  ]: Using postgres connection "model.dbt_dskola_project.int_monthly_supplier_revenue"
+[0m15:12:57.087070 [debug] [Thread-1  ]: On model.dbt_dskola_project.int_monthly_supplier_revenue: /* {"app": "dbt", "dbt_version": "1.8.2", "profile_name": "dbt_dskola_project", "target_name": "dev", "node_id": "model.dbt_dskola_project.int_monthly_supplier_revenue"} */
+alter table "db_project_2"."public"."int_monthly_supplier_revenue__dbt_tmp" rename to "int_monthly_supplier_revenue"
+[0m15:12:57.087070 [debug] [Thread-1  ]: SQL status: ALTER TABLE in 0.0 seconds
+[0m15:12:57.087070 [debug] [Thread-1  ]: On model.dbt_dskola_project.int_monthly_supplier_revenue: COMMIT
+[0m15:12:57.087070 [debug] [Thread-1  ]: Using postgres connection "model.dbt_dskola_project.int_monthly_supplier_revenue"
+[0m15:12:57.087070 [debug] [Thread-1  ]: On model.dbt_dskola_project.int_monthly_supplier_revenue: COMMIT
+[0m15:12:57.087070 [debug] [Thread-1  ]: SQL status: COMMIT in 0.0 seconds
+[0m15:12:57.087070 [debug] [Thread-1  ]: Applying DROP to: "db_project_2"."public"."int_monthly_supplier_revenue__dbt_backup"
+[0m15:12:57.087070 [debug] [Thread-1  ]: Using postgres connection "model.dbt_dskola_project.int_monthly_supplier_revenue"
+[0m15:12:57.087070 [debug] [Thread-1  ]: On model.dbt_dskola_project.int_monthly_supplier_revenue: /* {"app": "dbt", "dbt_version": "1.8.2", "profile_name": "dbt_dskola_project", "target_name": "dev", "node_id": "model.dbt_dskola_project.int_monthly_supplier_revenue"} */
+drop table if exists "db_project_2"."public"."int_monthly_supplier_revenue__dbt_backup" cascade
+[0m15:12:57.087070 [debug] [Thread-1  ]: SQL status: DROP TABLE in 0.0 seconds
+[0m15:12:57.087070 [debug] [Thread-1  ]: On model.dbt_dskola_project.int_monthly_supplier_revenue: Close
+[0m15:12:57.087070 [debug] [Thread-1  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'd5918b74-f4fe-4590-82b9-18893f850281', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000264F881E8E0>]}
+[0m15:12:57.087070 [info ] [Thread-1  ]: 10 of 13 OK created sql table model public.int_monthly_supplier_revenue ........ [[32mSELECT 338[0m in 0.06s]
+[0m15:12:57.087070 [debug] [Thread-1  ]: Finished running node model.dbt_dskola_project.int_monthly_supplier_revenue
+[0m15:12:57.087070 [debug] [Thread-1  ]: Began running node model.dbt_dskola_project.datamart_monthly_best_employee
+[0m15:12:57.087070 [info ] [Thread-1  ]: 11 of 13 START sql table model public.datamart_monthly_best_employee ........... [RUN]
+[0m15:12:57.101638 [debug] [Thread-1  ]: Re-using an available connection from the pool (formerly model.dbt_dskola_project.int_monthly_supplier_revenue, now model.dbt_dskola_project.datamart_monthly_best_employee)
+[0m15:12:57.102790 [debug] [Thread-1  ]: Began compiling node model.dbt_dskola_project.datamart_monthly_best_employee
+[0m15:12:57.106646 [debug] [Thread-1  ]: Writing injected SQL for node "model.dbt_dskola_project.datamart_monthly_best_employee"
+[0m15:12:57.107647 [debug] [Thread-1  ]: Began executing node model.dbt_dskola_project.datamart_monthly_best_employee
+[0m15:12:57.113180 [debug] [Thread-1  ]: Writing runtime sql for node "model.dbt_dskola_project.datamart_monthly_best_employee"
+[0m15:12:57.114189 [debug] [Thread-1  ]: Using postgres connection "model.dbt_dskola_project.datamart_monthly_best_employee"
+[0m15:12:57.115189 [debug] [Thread-1  ]: On model.dbt_dskola_project.datamart_monthly_best_employee: BEGIN
+[0m15:12:57.115189 [debug] [Thread-1  ]: Opening a new connection, currently in state closed
+[0m15:12:57.154424 [debug] [Thread-1  ]: SQL status: BEGIN in 0.0 seconds
+[0m15:12:57.155954 [debug] [Thread-1  ]: Using postgres connection "model.dbt_dskola_project.datamart_monthly_best_employee"
+[0m15:12:57.155954 [debug] [Thread-1  ]: On model.dbt_dskola_project.datamart_monthly_best_employee: /* {"app": "dbt", "dbt_version": "1.8.2", "profile_name": "dbt_dskola_project", "target_name": "dev", "node_id": "model.dbt_dskola_project.datamart_monthly_best_employee"} */
+
+  
+    
+
+  create  table "db_project_2"."public"."datamart_monthly_best_employee__dbt_tmp"
+  
+  
+    as
+  
+  (
+    -- models/marts/datamart_monthly_best_employee.sql
+with employee_ranked as (
+    select
+        ie.employee_id,
+        e.employee_name,
+        ie.month,
+        ie.total_gross_revenue,
+        row_number() over (partition by ie.month order by ie.total_gross_revenue desc) as rank
+    from "db_project_2"."public"."int_monthly_employee_revenue" ie
+    join "db_project_2"."public"."stg_employees" e
+    on ie.employee_id = e.employee_id
+)
+select
+    employee_name,
+    month,
+    total_gross_revenue
+from employee_ranked
+where rank = 1
+order by month asc
+  );
+  
+[0m15:12:57.161039 [debug] [Thread-1  ]: SQL status: SELECT 12 in 0.0 seconds
+[0m15:12:57.161039 [debug] [Thread-1  ]: Using postgres connection "model.dbt_dskola_project.datamart_monthly_best_employee"
+[0m15:12:57.161039 [debug] [Thread-1  ]: On model.dbt_dskola_project.datamart_monthly_best_employee: /* {"app": "dbt", "dbt_version": "1.8.2", "profile_name": "dbt_dskola_project", "target_name": "dev", "node_id": "model.dbt_dskola_project.datamart_monthly_best_employee"} */
+alter table "db_project_2"."public"."datamart_monthly_best_employee__dbt_tmp" rename to "datamart_monthly_best_employee"
+[0m15:12:57.161039 [debug] [Thread-1  ]: SQL status: ALTER TABLE in 0.0 seconds
+[0m15:12:57.161039 [debug] [Thread-1  ]: On model.dbt_dskola_project.datamart_monthly_best_employee: COMMIT
+[0m15:12:57.161039 [debug] [Thread-1  ]: Using postgres connection "model.dbt_dskola_project.datamart_monthly_best_employee"
+[0m15:12:57.161039 [debug] [Thread-1  ]: On model.dbt_dskola_project.datamart_monthly_best_employee: COMMIT
+[0m15:12:57.161039 [debug] [Thread-1  ]: SQL status: COMMIT in 0.0 seconds
+[0m15:12:57.161039 [debug] [Thread-1  ]: Applying DROP to: "db_project_2"."public"."datamart_monthly_best_employee__dbt_backup"
+[0m15:12:57.161039 [debug] [Thread-1  ]: Using postgres connection "model.dbt_dskola_project.datamart_monthly_best_employee"
+[0m15:12:57.161039 [debug] [Thread-1  ]: On model.dbt_dskola_project.datamart_monthly_best_employee: /* {"app": "dbt", "dbt_version": "1.8.2", "profile_name": "dbt_dskola_project", "target_name": "dev", "node_id": "model.dbt_dskola_project.datamart_monthly_best_employee"} */
+drop table if exists "db_project_2"."public"."datamart_monthly_best_employee__dbt_backup" cascade
+[0m15:12:57.161039 [debug] [Thread-1  ]: SQL status: DROP TABLE in 0.0 seconds
+[0m15:12:57.161039 [debug] [Thread-1  ]: On model.dbt_dskola_project.datamart_monthly_best_employee: Close
+[0m15:12:57.176781 [debug] [Thread-1  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'd5918b74-f4fe-4590-82b9-18893f850281', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000264F8807CA0>]}
+[0m15:12:57.176781 [info ] [Thread-1  ]: 11 of 13 OK created sql table model public.datamart_monthly_best_employee ...... [[32mSELECT 12[0m in 0.08s]
+[0m15:12:57.176781 [debug] [Thread-1  ]: Finished running node model.dbt_dskola_project.datamart_monthly_best_employee
+[0m15:12:57.180090 [debug] [Thread-1  ]: Began running node model.dbt_dskola_project.datamart_monthly_category_sold
+[0m15:12:57.180090 [info ] [Thread-1  ]: 12 of 13 START sql table model public.datamart_monthly_category_sold ........... [RUN]
+[0m15:12:57.181472 [debug] [Thread-1  ]: Re-using an available connection from the pool (formerly model.dbt_dskola_project.datamart_monthly_best_employee, now model.dbt_dskola_project.datamart_monthly_category_sold)
+[0m15:12:57.182276 [debug] [Thread-1  ]: Began compiling node model.dbt_dskola_project.datamart_monthly_category_sold
+[0m15:12:57.186839 [debug] [Thread-1  ]: Writing injected SQL for node "model.dbt_dskola_project.datamart_monthly_category_sold"
+[0m15:12:57.187881 [debug] [Thread-1  ]: Began executing node model.dbt_dskola_project.datamart_monthly_category_sold
+[0m15:12:57.192850 [debug] [Thread-1  ]: Writing runtime sql for node "model.dbt_dskola_project.datamart_monthly_category_sold"
+[0m15:12:57.193850 [debug] [Thread-1  ]: Using postgres connection "model.dbt_dskola_project.datamart_monthly_category_sold"
+[0m15:12:57.194844 [debug] [Thread-1  ]: On model.dbt_dskola_project.datamart_monthly_category_sold: BEGIN
+[0m15:12:57.194844 [debug] [Thread-1  ]: Opening a new connection, currently in state closed
+[0m15:12:57.231169 [debug] [Thread-1  ]: SQL status: BEGIN in 0.0 seconds
+[0m15:12:57.231169 [debug] [Thread-1  ]: Using postgres connection "model.dbt_dskola_project.datamart_monthly_category_sold"
+[0m15:12:57.231169 [debug] [Thread-1  ]: On model.dbt_dskola_project.datamart_monthly_category_sold: /* {"app": "dbt", "dbt_version": "1.8.2", "profile_name": "dbt_dskola_project", "target_name": "dev", "node_id": "model.dbt_dskola_project.datamart_monthly_category_sold"} */
+
+  
+    
+
+  create  table "db_project_2"."public"."datamart_monthly_category_sold__dbt_tmp"
+  
+  
+    as
+  
+  (
+    -- models/marts/datamart_monthly_category_sold.sql
+with category_ranked as (
+    select
+        ics.category_id,
+        c.category_name,
+        ics.month,
+        ics.total_quantity,
+        row_number() over (partition by ics.month order by ics.total_quantity desc) as rank
+    from "db_project_2"."public"."int_monthly_category_sales" ics
+    join "db_project_2"."public"."stg_categories" c
+    on ics.category_id = c.category_id
+)
+select
+    category_name,
+    month,
+    total_quantity
+from category_ranked
+where rank = 1
+order by month asc
+  );
+  
+[0m15:12:57.237853 [debug] [Thread-1  ]: SQL status: SELECT 12 in 0.0 seconds
+[0m15:12:57.237853 [debug] [Thread-1  ]: Using postgres connection "model.dbt_dskola_project.datamart_monthly_category_sold"
+[0m15:12:57.237853 [debug] [Thread-1  ]: On model.dbt_dskola_project.datamart_monthly_category_sold: /* {"app": "dbt", "dbt_version": "1.8.2", "profile_name": "dbt_dskola_project", "target_name": "dev", "node_id": "model.dbt_dskola_project.datamart_monthly_category_sold"} */
+alter table "db_project_2"."public"."datamart_monthly_category_sold__dbt_tmp" rename to "datamart_monthly_category_sold"
+[0m15:12:57.237853 [debug] [Thread-1  ]: SQL status: ALTER TABLE in 0.0 seconds
+[0m15:12:57.237853 [debug] [Thread-1  ]: On model.dbt_dskola_project.datamart_monthly_category_sold: COMMIT
+[0m15:12:57.237853 [debug] [Thread-1  ]: Using postgres connection "model.dbt_dskola_project.datamart_monthly_category_sold"
+[0m15:12:57.237853 [debug] [Thread-1  ]: On model.dbt_dskola_project.datamart_monthly_category_sold: COMMIT
+[0m15:12:57.237853 [debug] [Thread-1  ]: SQL status: COMMIT in 0.0 seconds
+[0m15:12:57.237853 [debug] [Thread-1  ]: Applying DROP to: "db_project_2"."public"."datamart_monthly_category_sold__dbt_backup"
+[0m15:12:57.237853 [debug] [Thread-1  ]: Using postgres connection "model.dbt_dskola_project.datamart_monthly_category_sold"
+[0m15:12:57.237853 [debug] [Thread-1  ]: On model.dbt_dskola_project.datamart_monthly_category_sold: /* {"app": "dbt", "dbt_version": "1.8.2", "profile_name": "dbt_dskola_project", "target_name": "dev", "node_id": "model.dbt_dskola_project.datamart_monthly_category_sold"} */
+drop table if exists "db_project_2"."public"."datamart_monthly_category_sold__dbt_backup" cascade
+[0m15:12:57.237853 [debug] [Thread-1  ]: SQL status: DROP TABLE in 0.0 seconds
+[0m15:12:57.237853 [debug] [Thread-1  ]: On model.dbt_dskola_project.datamart_monthly_category_sold: Close
+[0m15:12:57.237853 [debug] [Thread-1  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'd5918b74-f4fe-4590-82b9-18893f850281', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000264F87C5160>]}
+[0m15:12:57.237853 [info ] [Thread-1  ]: 12 of 13 OK created sql table model public.datamart_monthly_category_sold ...... [[32mSELECT 12[0m in 0.06s]
+[0m15:12:57.237853 [debug] [Thread-1  ]: Finished running node model.dbt_dskola_project.datamart_monthly_category_sold
+[0m15:12:57.237853 [debug] [Thread-1  ]: Began running node model.dbt_dskola_project.datamart_monthly_supplier_gross_revenue
+[0m15:12:57.253401 [info ] [Thread-1  ]: 13 of 13 START sql table model public.datamart_monthly_supplier_gross_revenue .. [RUN]
+[0m15:12:57.254418 [debug] [Thread-1  ]: Re-using an available connection from the pool (formerly model.dbt_dskola_project.datamart_monthly_category_sold, now model.dbt_dskola_project.datamart_monthly_supplier_gross_revenue)
+[0m15:12:57.254418 [debug] [Thread-1  ]: Began compiling node model.dbt_dskola_project.datamart_monthly_supplier_gross_revenue
+[0m15:12:57.257958 [debug] [Thread-1  ]: Writing injected SQL for node "model.dbt_dskola_project.datamart_monthly_supplier_gross_revenue"
+[0m15:12:57.258958 [debug] [Thread-1  ]: Began executing node model.dbt_dskola_project.datamart_monthly_supplier_gross_revenue
+[0m15:12:57.264474 [debug] [Thread-1  ]: Writing runtime sql for node "model.dbt_dskola_project.datamart_monthly_supplier_gross_revenue"
+[0m15:12:57.266492 [debug] [Thread-1  ]: Using postgres connection "model.dbt_dskola_project.datamart_monthly_supplier_gross_revenue"
+[0m15:12:57.266492 [debug] [Thread-1  ]: On model.dbt_dskola_project.datamart_monthly_supplier_gross_revenue: BEGIN
+[0m15:12:57.266492 [debug] [Thread-1  ]: Opening a new connection, currently in state closed
+[0m15:12:57.301506 [debug] [Thread-1  ]: SQL status: BEGIN in 0.0 seconds
+[0m15:12:57.301506 [debug] [Thread-1  ]: Using postgres connection "model.dbt_dskola_project.datamart_monthly_supplier_gross_revenue"
+[0m15:12:57.302492 [debug] [Thread-1  ]: On model.dbt_dskola_project.datamart_monthly_supplier_gross_revenue: /* {"app": "dbt", "dbt_version": "1.8.2", "profile_name": "dbt_dskola_project", "target_name": "dev", "node_id": "model.dbt_dskola_project.datamart_monthly_supplier_gross_revenue"} */
+
+  
+    
+
+  create  table "db_project_2"."public"."datamart_monthly_supplier_gross_revenue__dbt_tmp"
+  
+  
+    as
+  
+  (
+    -- models/marts/datamart_monthly_supplier_gross_revenue.sql
+select
+    s.company_name as supplier_name,
+    imsr.month,
+    imsr.total_gross_revenue
+from "db_project_2"."public"."int_monthly_supplier_revenue" imsr
+join "db_project_2"."public"."stg_suppliers" s
+on imsr.supplier_id = s.supplier_id
+order by company_name desc,  month asc
+  );
+  
+[0m15:12:57.306496 [debug] [Thread-1  ]: SQL status: SELECT 338 in 0.0 seconds
+[0m15:12:57.306496 [debug] [Thread-1  ]: Using postgres connection "model.dbt_dskola_project.datamart_monthly_supplier_gross_revenue"
+[0m15:12:57.306496 [debug] [Thread-1  ]: On model.dbt_dskola_project.datamart_monthly_supplier_gross_revenue: /* {"app": "dbt", "dbt_version": "1.8.2", "profile_name": "dbt_dskola_project", "target_name": "dev", "node_id": "model.dbt_dskola_project.datamart_monthly_supplier_gross_revenue"} */
+alter table "db_project_2"."public"."datamart_monthly_supplier_gross_revenue__dbt_tmp" rename to "datamart_monthly_supplier_gross_revenue"
+[0m15:12:57.306496 [debug] [Thread-1  ]: SQL status: ALTER TABLE in 0.0 seconds
+[0m15:12:57.306496 [debug] [Thread-1  ]: On model.dbt_dskola_project.datamart_monthly_supplier_gross_revenue: COMMIT
+[0m15:12:57.306496 [debug] [Thread-1  ]: Using postgres connection "model.dbt_dskola_project.datamart_monthly_supplier_gross_revenue"
+[0m15:12:57.306496 [debug] [Thread-1  ]: On model.dbt_dskola_project.datamart_monthly_supplier_gross_revenue: COMMIT
+[0m15:12:57.306496 [debug] [Thread-1  ]: SQL status: COMMIT in 0.0 seconds
+[0m15:12:57.306496 [debug] [Thread-1  ]: Applying DROP to: "db_project_2"."public"."datamart_monthly_supplier_gross_revenue__dbt_backup"
+[0m15:12:57.306496 [debug] [Thread-1  ]: Using postgres connection "model.dbt_dskola_project.datamart_monthly_supplier_gross_revenue"
+[0m15:12:57.306496 [debug] [Thread-1  ]: On model.dbt_dskola_project.datamart_monthly_supplier_gross_revenue: /* {"app": "dbt", "dbt_version": "1.8.2", "profile_name": "dbt_dskola_project", "target_name": "dev", "node_id": "model.dbt_dskola_project.datamart_monthly_supplier_gross_revenue"} */
+drop table if exists "db_project_2"."public"."datamart_monthly_supplier_gross_revenue__dbt_backup" cascade
+[0m15:12:57.306496 [debug] [Thread-1  ]: SQL status: DROP TABLE in 0.0 seconds
+[0m15:12:57.306496 [debug] [Thread-1  ]: On model.dbt_dskola_project.datamart_monthly_supplier_gross_revenue: Close
+[0m15:12:57.306496 [debug] [Thread-1  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'd5918b74-f4fe-4590-82b9-18893f850281', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000264F8807CA0>]}
+[0m15:12:57.306496 [info ] [Thread-1  ]: 13 of 13 OK created sql table model public.datamart_monthly_supplier_gross_revenue  [[32mSELECT 338[0m in 0.05s]
+[0m15:12:57.322375 [debug] [Thread-1  ]: Finished running node model.dbt_dskola_project.datamart_monthly_supplier_gross_revenue
+[0m15:12:57.324860 [debug] [MainThread]: Using postgres connection "master"
+[0m15:12:57.324860 [debug] [MainThread]: On master: BEGIN
+[0m15:12:57.325877 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m15:12:57.359985 [debug] [MainThread]: SQL status: BEGIN in 0.0 seconds
+[0m15:12:57.360987 [debug] [MainThread]: On master: COMMIT
+[0m15:12:57.360987 [debug] [MainThread]: Using postgres connection "master"
+[0m15:12:57.360987 [debug] [MainThread]: On master: COMMIT
+[0m15:12:57.361994 [debug] [MainThread]: SQL status: COMMIT in 0.0 seconds
+[0m15:12:57.361994 [debug] [MainThread]: On master: Close
+[0m15:12:57.362987 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m15:12:57.362987 [debug] [MainThread]: Connection 'list_db_project_2' was properly closed.
+[0m15:12:57.362987 [debug] [MainThread]: Connection 'list_db_project_2_public' was properly closed.
+[0m15:12:57.362987 [debug] [MainThread]: Connection 'model.dbt_dskola_project.datamart_monthly_supplier_gross_revenue' was properly closed.
+[0m15:12:57.364505 [info ] [MainThread]: 
+[0m15:12:57.364505 [info ] [MainThread]: Finished running 13 table models in 0 hours 0 minutes and 2.97 seconds (2.97s).
+[0m15:12:57.367517 [debug] [MainThread]: Command end result
+[0m15:12:57.395512 [info ] [MainThread]: 
+[0m15:12:57.396517 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m15:12:57.397523 [info ] [MainThread]: 
+[0m15:12:57.398519 [info ] [MainThread]: Done. PASS=13 WARN=0 ERROR=0 SKIP=0 TOTAL=13
+[0m15:12:57.399519 [debug] [MainThread]: Command `dbt run` succeeded at 15:12:57.399519 after 4.54 seconds
+[0m15:12:57.399519 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000264F5211C40>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000264F720B2B0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000264F87E3490>]}
+[0m15:12:57.400520 [debug] [MainThread]: Flushing usage events

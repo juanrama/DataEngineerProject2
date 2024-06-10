@@ -1,5 +1,27 @@
 import pandas as pd
 from sqlalchemy import create_engine
+import psycopg2
+from psycopg2 import sql
+
+
+conn = psycopg2.connect(
+    host='localhost',
+    user='postgres',
+    password='123456789'
+)
+
+conn.autocommit = True
+
+#Creating a cursor object using the cursor() method
+cursor = conn.cursor()
+
+cursor.execute(sql.SQL("CREATE DATABASE {}").format(sql.Identifier('db_project_2')))
+
+# Close the connection
+cursor.close()
+conn.close()
+
+print("Database created successfully")
 
 # Konfigurasi koneksi ke PostgreSQL
 db_user = 'postgres'
